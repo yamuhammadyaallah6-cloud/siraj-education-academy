@@ -4,172 +4,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Siraj Education Academy</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f8ff;
-    color: #17243a;
-    line-height: 1.8;
+  font-family: "Noto Nastaliq Urdu", Arial, sans-serif;
+  background: #f5f8ff;
+  color: #172554;
+  line-height: 2;
 }
 
 header {
-    background: #1456a0;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background: #102d5e;
+  color: white;
+  padding: 15px 20px;
 }
 
-header h1 {
-    font-size: 30px;
+.header-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-nav {
-    background: #0c3670;
-    padding: 12px;
-    text-align: center;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 14px;
 }
 
 .hero {
-    padding: 65px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #1456a0, #2786df);
-    color: white;
+  padding: 75px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #12366f, #1684d8);
 }
 
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .btn {
-    display: inline-block;
-    background: #ffcc33;
-    color: #14294a;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
+  display: inline-block;
+  background: #ffcc38;
+  color: #14264a;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 section {
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin: auto;
+  padding: 45px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.section-title {
-    text-align: center;
-    color: #1456a0;
-    font-size: 27px;
-    margin-bottom: 25px;
+.heading {
+  text-align: center;
+  color: #1456a0;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px #00000012;
-    text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 20px #183d7210;
+  border-bottom: 4px solid #1684d8;
+}
+
+.card .emoji {
+  font-size: 42px;
 }
 
 .card h3 {
-    color: #1456a0;
-    margin-bottom: 10px;
+  color: #1456a0;
+  margin: 10px 0;
 }
 
-.about {
-    background: white;
-    border-radius: 14px;
-    padding: 25px;
-    text-align: center;
+.about-box {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.features {
+  background: #e7f1ff;
+  border-radius: 18px;
 }
 
 form {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    max-width: 550px;
-    margin: auto;
-    box-shadow: 0 3px 12px #00000012;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px #183d7210;
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 13px;
-    margin: 10px 0;
-    border: 1px solid #ccd7e5;
-    border-radius: 8px;
-    font-size: 16px;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #d5deeb;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 button {
-    width: 100%;
-    padding: 14px;
-    background: #1456a0;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 17px;
-    cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1456a0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #0c3670;
+  background: #0c3670;
 }
 
-.contact {
-    background: #eaf2ff;
-    text-align: center;
-    border-radius: 14px;
+.contact-box {
+  background: #102d5e;
+  color: white;
+  text-align: center;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #20bd64;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 footer {
-    background: #0c3670;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #091d40;
+  color: white;
+  text-align: center;
+  padding: 22px;
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 24px;
-    }
+@media(max-width:600px) {
+  .header-content {
+    justify-content: center;
+    text-align: center;
+  }
 
-    .hero h2 {
-        font-size: 25px;
-    }
+  nav {
+    width: 100%;
+  }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
 }
 </style>
 </head>
@@ -177,144 +214,182 @@ footer {
 <body>
 
 <header>
-    <h1>Siraj Education Academy</h1>
-    <p>علم، تعلیم اور روشن مستقبل</p>
+  <div class="header-content">
+    <div class="logo">🎓 Siraj Education Academy</div>
+
+    <nav>
+      <a href="#home">ہوم</a>
+      <a href="#courses">کورسز</a>
+      <a href="#about">ہمارے بارے میں</a>
+      <a href="#admission">داخلہ</a>
+      <a href="#contact">رابطہ</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-    <a href="#home">ہوم</a>
-    <a href="#courses">کورسز</a>
-    <a href="#about">ہمارے بارے میں</a>
-    <a href="#admission">داخلہ</a>
-    <a href="#contact">رابطہ</a>
-</nav>
-
 <div class="hero" id="home">
-    <h2>خوش آمدید Siraj Education Academy</h2>
-    <p>اپنے مستقبل کو تعلیم کے ذریعے روشن بنائیں</p>
-    <p>بہترین تعلیم، بہترین اساتذہ اور کامیاب مستقبل</p>
-    <a href="#admission" class="btn">داخلہ حاصل کریں</a>
+  <h1>Siraj Education Academy</h1>
+
+  <p>تعلیم، کامیابی اور روشن مستقبل کا سفر</p>
+
+  <p>اپنے خوابوں کو حقیقت بنانے کے لیے آج ہی ہمارے ساتھ شامل ہوں۔</p>
+
+  <a href="#admission" class="btn">داخلہ حاصل کریں</a>
 </div>
 
 <section id="courses">
-    <h2 class="section-title">ہمارے کورسز</h2>
+  <h2 class="heading">📚 ہمارے کورسز</h2>
 
-    <div class="cards">
+  <div class="cards">
 
-        <div class="card">
-            <h3>📘 انگلش کورس</h3>
-            <p>انگلش گرامر، بولنے اور لکھنے کی مہارت</p>
-        </div>
-
-        <div class="card">
-            <h3>💻 کمپیوٹر کورس</h3>
-            <p>کمپیوٹر کی بنیادی تعلیم اور جدید مہارتیں</p>
-        </div>
-
-        <div class="card">
-            <h3>📚 اسکول ٹیوشن</h3>
-            <p>تمام کلاسز کے لیے معیاری ٹیوشن</p>
-        </div>
-
-        <div class="card">
-            <h3>📝 آن لائن تعلیم</h3>
-            <p>گھر بیٹھے آن لائن تعلیم حاصل کریں</p>
-        </div>
-
+    <div class="card">
+      <div class="emoji">📖</div>
+      <h3>اسکول ٹیوشن</h3>
+      <p>طلباء کے لیے مختلف کلاسز کی تعلیمی رہنمائی اور ٹیوشن۔</p>
     </div>
+
+    <div class="card">
+      <div class="emoji">🗣️</div>
+      <h3>انگلش لینگویج</h3>
+      <p>انگلش بولنے، لکھنے، پڑھنے اور گرامر کی تربیت۔</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">💻</div>
+      <h3>کمپیوٹر کورس</h3>
+      <p>کمپیوٹر کی بنیادی مہارتیں اور جدید ڈیجیٹل تعلیم۔</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌐</div>
+      <h3>آن لائن کلاسز</h3>
+      <p>گھر بیٹھے تعلیم حاصل کرنے کے لیے آن لائن کلاسز۔</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="about">
-    <h2 class="section-title">ہمارے بارے میں</h2>
+  <h2 class="heading">🏫 ہمارے بارے میں</h2>
 
-    <div class="about">
-        <p>
-        Siraj Education Academy ایک تعلیمی ادارہ ہے
-        جس کا مقصد طلباء کو بہترین تعلیم دینا،
-        ان کی صلاحیتوں کو بہتر بنانا اور
-        کامیاب مستقبل کے لیے تیار کرنا ہے۔
-        </p>
+  <div class="about-box">
+    <p>
+      Siraj Education Academy میں ہمارا مقصد طلباء کو معیاری تعلیم،
+      اچھی رہنمائی اور بہتر مستقبل کے لیے تیار کرنا ہے۔
+    </p>
 
-        <p>
-        ہم معیاری تعلیم، محنت اور رہنمائی
-        پر یقین رکھتے ہیں۔
-        </p>
+    <p>
+      ہم محنت، نظم و ضبط اور علم کے ذریعے کامیابی پر یقین رکھتے ہیں۔
+    </p>
+  </div>
+</section>
+
+<section class="features">
+  <h2 class="heading">⭐ ہمیں کیوں منتخب کریں؟</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>👨‍🏫 بہترین رہنمائی</h3>
+      <p>طلباء کی تعلیم اور ترقی پر خصوصی توجہ۔</p>
     </div>
+
+    <div class="card">
+      <h3>📚 معیاری تعلیم</h3>
+      <p>آسان طریقے سے سمجھنے اور سیکھنے کا ماحول۔</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 روشن مستقبل</h3>
+      <p>طلباء کو آگے بڑھنے اور کامیابی حاصل کرنے میں مدد۔</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="admission">
-    <h2 class="section-title">داخلہ فارم</h2>
+  <h2 class="heading">📝 داخلہ فارم</h2>
 
-    <form onsubmit="sendAdmission(event)">
+  <form onsubmit="sendAdmission(event)">
 
-        <input type="text" id="name"
-        placeholder="طالب علم کا نام" required>
+    <input id="studentName" type="text"
+      placeholder="طالب علم کا نام" required>
 
-        <input type="tel" id="phone"
-        placeholder="موبائل نمبر" required>
+    <input id="studentPhone" type="tel"
+      placeholder="موبائل نمبر" required>
 
-        <input type="text" id="class"
-        placeholder="کلاس یا کورس" required>
+    <select id="studentCourse" required>
+      <option value="">کورس منتخب کریں</option>
+      <option>اسکول ٹیوشن</option>
+      <option>انگلش لینگویج</option>
+      <option>کمپیوٹر کورس</option>
+      <option>آن لائن کلاسز</option>
+    </select>
 
-        <select id="course" required>
-            <option value="">کورس منتخب کریں</option>
-            <option>انگلش کورس</option>
-            <option>کمپیوٹر کورس</option>
-            <option>اسکول ٹیوشن</option>
-            <option>آن لائن تعلیم</option>
-        </select>
+    <input id="studentClass" type="text"
+      placeholder="کلاس / جماعت">
 
-        <textarea id="message"
-        placeholder="اپنا پیغام لکھیں"></textarea>
+    <textarea id="studentMessage"
+      placeholder="مزید معلومات یا پیغام"></textarea>
 
-        <button type="submit">داخلے کے لیے درخواست بھیجیں</button>
+    <button type="submit">WhatsApp پر داخلہ درخواست بھیجیں</button>
 
-    </form>
+  </form>
 </section>
 
 <section id="contact">
-    <h2 class="section-title">ہم سے رابطہ کریں</h2>
+  <div class="contact-box">
+    <h2>📞 رابطہ کریں</h2>
 
-    <div class="contact">
-        <p>🏫 Siraj Education Academy</p>
-        <p>📞 فون: اپنا فون نمبر یہاں لکھیں</p>
-        <p>📍 پتہ: اپنا اکیڈمی کا پتہ یہاں لکھیں</p>
-        <p>📧 ای میل: اپنی ای میل یہاں لکھیں</p>
-    </div>
+    <p>Siraj Education Academy</p>
+
+    <p>داخلے اور کورسز کی معلومات کے لیے رابطہ کریں۔</p>
+
+    <a class="whatsapp"
+       href="https://wa.me/03107855731"
+       target="_blank">
+       WhatsApp پر رابطہ کریں
+    </a>
+
+    <p style="margin-top:15px">
+      📍 اپنا اکیڈمی کا پتہ یہاں درج کریں
+    </p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Siraj Education Academy</p>
-    <p>تمام حقوق محفوظ ہیں</p>
+  <p>© 2026 Siraj Education Academy</p>
+  <p>تعلیم سب کے لیے — روشن مستقبل</p>
 </footer>
 
 <script>
 function sendAdmission(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const studentClass = document.getElementById("class").value;
-    const course = document.getElementById("course").value;
-    const message = document.getElementById("message").value;
+  const name = document.getElementById("studentName").value;
+  const phone = document.getElementById("studentPhone").value;
+  const course = document.getElementById("studentCourse").value;
+  const studentClass = document.getElementById("studentClass").value;
+  const message = document.getElementById("studentMessage").value;
 
-    const academyNumber = "923001234567";
+  const academyWhatsApp = "923001234567";
 
-    const text =
-        "Admission Application - Siraj Education Academy\n\n" +
-        "Name: " + name + "\n" +
-        "Phone: " + phone + "\n" +
-        "Class: " + studentClass + "\n" +
-        "Course: " + course + "\n" +
-        "Message: " + message;
+  const text =
+    "Siraj Education Academy Admission Request\n\n" +
+    "Student Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Course: " + course + "\n" +
+    "Class: " + studentClass + "\n" +
+    "Message: " + message;
 
-    const url =
-        "https://wa.me/" + academyNumber +
-        "?text=" + encodeURIComponent(text);
+  const link =
+    "https://wa.me/" + academyWhatsApp +
+    "?text=" + encodeURIComponent(text);
 
-    window.open(url, "_blank");
+  window.open(link, "_blank");
 }
 </script>
 
 </body>
 </html>
+
